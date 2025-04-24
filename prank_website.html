@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Me!</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+    }
+    button {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      background-color: #ff0066;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff3385;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="freezeBrowser()">Click Me 😈</button>
+
+  <script>
+    function freezeBrowser() {
+      const start = Date.now();
+      while (Date.now() - start < 15000) {
+        // Do nothing — just loop for 15 seconds
+      }
+      alert("Gotcha! 😂");
+    }
+  </script>
+</body>
+</html>
